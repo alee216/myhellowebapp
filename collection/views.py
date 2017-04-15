@@ -1,10 +1,10 @@
 from django.shortcuts import render
+from collection.models import Profile
 
 # Create your views here.
 def index(request):
-	number = 6
-	thing = "Thing name"
+	profiles = Profile.objects.all()
+
 	return render(request, 'index.html', {
-		'number': number,
-		'thing': thing,
+		'profiles': profiles,
 	})
