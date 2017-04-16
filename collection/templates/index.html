@@ -8,7 +8,11 @@
 
 {% block content %}
 	{% for profile in profiles %}
-	<h2>{{ profile.name }}</h2>
+	<h2>
+		<a href="{% url 'profile_detail' slug=profile.slug %}">
+			{{ profile.name }}
+		</a>
+	</h2>
 	<p>{{ profile.description }}</p>
 	{% endfor %}
 {% endblock content %}
