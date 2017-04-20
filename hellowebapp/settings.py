@@ -25,7 +25,8 @@ SECRET_KEY = 'i&_a(rx39jm1p(iu&u#4z!^zhx00)2!g=@(8y%fplf==1r)j6a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# XXX: Update to future domain on launched app
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
